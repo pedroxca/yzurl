@@ -6,18 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Url Shortener</title>
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styles/home/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
-  <!-- mongodb+srv://pedroxca:<password>@my-meower.nxr3w.mongodb.net/myFirstDatabase?retryWrites=true&w=majority -->
-  <h1>Url shortener</h1>
-  <form class="form">
-    <label for="slug">Slug:</label>
-    <input type="text" placeholder="Slug" name="slug">
-    <label for="Url">Url:</label>
-    <input type="text" placeholder="Url" name="url">
-    <button type="submit">Create shortened URL</button>
-  </form>
+  <div class="wrapper">
+    <h1>Url shortener</h1>
+    <form class="form">
+      <div>
+        <label for="slug">Slug:</label>
+        <input type="text" placeholder="Slug" name="slug">
+      </div>
+      <div>
+        <label for="Url">Url:</label>
+        <input type="url" placeholder="Url" name="url">
+      </div>
+      <button type="submit">Create</button>
+    </form>
+    <div id="responseText"></div>
+  </div>
+  <script src="./scripts/app.js"></script>
 </body>
 
 </html>

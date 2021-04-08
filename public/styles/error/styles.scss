@@ -1,0 +1,16 @@
+.wrapper{
+  h1{
+    font-weight: lighter;
+  }
+  p{
+    margin: 2.5vmin;
+    a{
+      text-decoration: none;
+    }
+    font-size: 1.3rem;
+  }
+
+  display: grid;
+  place-items: center;
+  margin: 10vmin;
+}

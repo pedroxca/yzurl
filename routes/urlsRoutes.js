@@ -51,8 +51,9 @@ router.post('/url', async (req, res) => {
       res.status(400)
     }
     else if (err.message.startsWith('E11000')) {
-      err.message = 'Duplicate key error collection E11000. Slug in use 🍔';
+      // res.statusText('Slug in use 🍔')
       res.status(400);
+      err.message = 'Duplicate key error collection E11000. Slug in use 🍔';
     }
     console.error(err.message);
     res.send(err.message);

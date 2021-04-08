@@ -1,0 +1,20 @@
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 10vmin;
+}
+
+.wrapper h1 {
+  font-weight: lighter;
+}
+
+.wrapper p {
+  margin: 2.5vmin;
+  font-size: 1.3rem;
+}
+
+.wrapper p a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */
