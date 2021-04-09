@@ -2,7 +2,7 @@ const express = require('express');
 const slugSchema = require("../schema/slugSchema");
 const monk = require('monk');
 const { nanoid } = require('nanoid');
-require('dotenv').config();
+require('dotenv').config('../');
 
 
 const db = monk(process.env.MONGO_URI);
