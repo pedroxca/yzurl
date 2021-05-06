@@ -19,13 +19,13 @@ const handleFormSubmit = async event => {
     },
     body: JSON.stringify(newUrl)
   });
+  const data = await response.json();
   if (response.status === 400) {
-    responseText.innerText = 'Slug in use 🍔.'
-    // console.log(response);
+    responseText.innerText = data.message
+    console.log(response);
     return
   }
   // console.log(response);
-  const data = await response.json();
   responseText.innerHTML = `Slug: ${data.slug} <br>Url: ${data.url}`
   console.log(data);
 
